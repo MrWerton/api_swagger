@@ -1,0 +1,45 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Hello api",
+        "description": "this a documentation of hello api",
+        "version": "1.0.0",
+        "contact": {
+            "email": "mr.werton@gmail.com"
+        }
+    },
+    "paths": {
+        "/hello": {
+            "get": {
+                "tags": [
+                    "Greetings"
+                ],
+                "summary": "get greetings",
+                "description": "get greetings",
+               
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                        "type": "object",
+                                        "properties": {
+
+                                            "message": {
+                                                "type": "string"
+                                            }
+                                          
+                                        }
+                                
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        
+            
+        }
+    }
+}
